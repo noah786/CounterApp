@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CounterApp</title>
+    <!-- <link rel="stylesheet" href="input.css"> -->
+    <!-- <link rel="stylesheet" href="output.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div
+      class="w-[100vw] h-[100vh] bg-[#344151] flex flex-col justify-center items-center"
+    >
+      <!--Text Area-->
+      <div class="font-serif text-2xl text-[#0398d4] font-bold p-10">
+        Increment And Decrement
+      </div>
+
+      <!--Button Area-->
+      <div
+        class="bg-white gap-10 px-8 flex justify-evenly border-none py-5 rounded-md"
+      >
+        <!--negative button-->
+        <button onclick="decrement()" class="border-r-2 border-[#bfbfbf] pr-5">
+          <i class="fa fa-minus"></i>
+        </button>
+
+        <!--Numeral-->
+        <div id="counter" class="font-bold">0</div>
+
+        <!--Positive Button-->
+        <button onclick="increment()" class="border-l-2 border-[#bfbfbf] pl-5">
+          <i class="fa fa-plus"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
